@@ -3,7 +3,7 @@
 
 This smart contract utilizes the ERC721 token standard for a subscription based model that includes a referral program.
 
-Please note that this smart contract is not ideal for a subscription based model. If you are looking for a basic decentralized subscription system, i recommend the ERC4337 smart contract standard or general metadata funcitonalities. Unfortunately most centralized applications like Discord bots do not support newer smart contract standards like ERC4337 or cannot read more complex metadata structures, which is why i wrote this specific smart contract. Its not pretty but it will work.
+Please note that this smart contract is not ideal for a subscription based model. If you are looking for a basic decentralized subscription system, i recommend the ERC4337 smart contract standard or general metadata funcitonalities. Unfortunately most centralized applications like Discord bots do not support newer smart contract standards like ERC4337 or cannot read more complex metadata structures, which is why i wrote this specific smart contract.
 
 The contract is basically a normal ERC721 standard, that uses the openZeppelin library. 
 
