@@ -1,0 +1,18 @@
+# Smart Contract for a subscription model using an adjusted ERC721 token standard
+
+
+This smart contract utilizes the ERC721 token standard for a subscription based model that includes a referral program.
+
+Please note that this smart contract is not ideal for a subscription based model. If you are looking for a basic decentralized subscription system, i recommend the ERC4337 token standard or general metadata funcitonalities. Unfortunately most centralized applications like Discord bots do not support newer token standards like ERC4337 or cannot read more complex metadata structures, which is why i wrote this specific smart contract. Its not pretty but it will work.
+
+The contract is basically a normal ERC721 standard, that uses the openZeppelin library. 
+
+It consists of the basic ERC721 functions, but is extended by a mintWithReferral(<referralAddress>) function and burnExpired() function (including some admin functionalities), as well as a system for storing and paying out ReferralBalances.
+
+To make this contract work, you need to let the users sign the setApprovalForAll(<your_address>, <true>) function before minting your NFT, allowing you to later burn the NFT after it is expired.
+
+To avoid users revoking the approval, the ERC721 token standard has been adjusted by 1 line in the setApprovalForAll function, not allowing to change the state after initially setting the approval.
+
+Wallets like metamask will inform the user about the risks that may come with that.
+
+
