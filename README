@@ -16,3 +16,8 @@ To avoid users revoking the approval, the ERC721 token standard has been adjuste
 Wallets like metamask will inform the user about the risks that may come with that.
 
 
+
+
+The Subscription duration is by standard set to 30 days. you can adjust it in the burnExpired() function. I am using basic UNIX timestamps.
+
+
