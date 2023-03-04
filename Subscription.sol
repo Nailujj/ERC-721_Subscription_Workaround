@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "./ERC20_Adjusted.sol";
 
 
-contract Subscription is ERC721, ERC721Enumerable, Pausable, Ownable, ERC721Burnable, Referral {
+contract Subscription is ERC721, ERC721Enumerable, Pausable, Ownable, ERC721Burnable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
 
