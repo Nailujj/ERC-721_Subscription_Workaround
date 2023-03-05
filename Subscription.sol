@@ -33,7 +33,7 @@ contract Subscription is ERC721, ERC721Enumerable, Pausable, Ownable, ERC721Burn
         bool isBlacklisted;
     }
 
-    constructor() ERC721("PolarSubscription", "PS") {
+    constructor() ERC721("Subscription", "S") {
     }
 
 
